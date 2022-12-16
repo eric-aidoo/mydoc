@@ -17,8 +17,33 @@ Make sure you have node installed in your machine. Othwerwise the above codes wo
 * Currently, there's only one endpoint (i.e. signup endpoint) for testing purpose. But, you can easily create many different endpoints to fit
 your use case. The codes are oversimplified, so it's easy to understand just by following along and reading the comments.
 
-  * Testing
-   - You ca
+ If you don't know how to make an API request, see example below:
+ 
+ * const makeApiCall = async (requestBody) => {
+      let endpoint = "http://localhost:3000/api/v1/signup" // your url
+      const options = {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestBody)  
+      };
+      
+      try {
+        const response = await fetch(endpoint, options);
+        
+        if (!response.ok) {
+            // Your logic goes here
+        } 
+        const data = response.json();
+        return data;
+      } catch {
+        return error.message
+      }  
+  }
+  
+  Hope this helps! 😉
 
 # Database
 There's no database pulgged in this project. However you can easily implement and link your own DB (such as SQL or MongoDb) by again, following along.
