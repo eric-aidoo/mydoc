@@ -30,7 +30,6 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
         },
         body: JSON.stringify(requestBody)  
       };
-      
       try {
         const response = await fetch(endpoint, options);
         
