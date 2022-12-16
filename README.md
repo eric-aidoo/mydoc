@@ -21,30 +21,30 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
  
  -------------------------------------------------------------------------------------
   
-  function makeApiCall(requestBody) {
-      let endpoint = "http://localhost:3000/api/v1/signup";
-      const options = {
-        method: "POST",
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestBody)  
-      };
-      
-      try {
-        const response = await fetch(endpoint, options);
-        
-        if (!response.ok) {
-            // Your logic goes here
-        } 
-        const data = await response.json();
-        return data;
-      } catch {
-        return error.message
-      }  
-  } 
- makeApiCall(yourRequestBodyObject)
+      function makeApiCall(requestBody) {
+          let endpoint = "http://localhost:3000/api/v1/signup";
+          const options = {
+            method: "POST",
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)  
+          };
+
+          try {
+            const response = await fetch(endpoint, options);
+
+            if (!response.ok) {
+                // Your logic goes here
+            } 
+            const data = await response.json();
+            return data;
+          } catch {
+            return error.message
+          }  
+      } 
+     makeApiCall(yourRequestBodyObject)
 ----------------------------------------------------------------------------------------- 
  
   Hope this helps! 😉
