@@ -21,8 +21,8 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
  
  -------------------------------------------------------------------------------------
   
-      function makeApiCall(requestBody) {
-          let endpoint = "http://localhost:3000/api/v1/signup";
+      const makeApiCall = (requestBody) => {
+          let endpoint = "http://localhost:3000/api/v1/signup" // your url ;
           const options = {
             method: "POST",
             headers: {
