@@ -19,7 +19,7 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
 
  If you don't know how to make an API request, see example below:
  
- * const makeApiCall = async (requestBody) => {
+   const makeApiCall = async (requestBody) => {
       let endpoint = "http://localhost:3000/api/v1/signup" // your url
       const options = {
         method: "POST",
@@ -43,6 +43,8 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
       }  
   }
   
+ makeApiCall(yourRequestBodyObject)
+ 
   Hope this helps! 😉
 
 # Database
