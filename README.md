@@ -17,7 +17,7 @@ Make sure you have node installed in your machine. Othwerwise the above codes wo
 * Currently, there's only one endpoint (i.e. signup endpoint) for testing purpose. But, you can easily create many different endpoints to fit
 your use case. The codes are oversimplified, so it's easy to understand just by following along and reading the comments.
 
- If you don't know how to make an API request, see example below:
+ # If you don't know how to make an API request, see example below:
  
    const makeApiCall = async (requestBody) => {
       let endpoint = "http://localhost:3000/api/v1/signup" // your url
@@ -41,9 +41,9 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
       } catch {
         return error.message
       }  
-  }
-  
+  } 
  makeApiCall(yourRequestBodyObject)
+ 
  
   Hope this helps! 😉
 
