@@ -1,12 +1,12 @@
 const mockupRequestBody = {
     "email": "Eric@gmail.com",
-    "password": "Kwame2000",
-    "firstName": "eric",
-    "lastName": "aidoo",
-    "phone": "+17173152307",
+    "password": "Test12345@",
+    "firstName": "John",
+    "lastName": "Doe",
+    "phone": "+12345678901",
     "dob": "03-11-2000",
-    "line1": "201 vairo blvd",
-    "city": "state college",
+    "line1": "201 Hershey Park Drive",
+    "city": "Hershey",
     "state": "pa",
     "country": "united states",
     "zipCode": 16803
