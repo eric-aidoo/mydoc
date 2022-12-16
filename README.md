@@ -19,8 +19,9 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
 
  # If you don't know how to make an API request, see example below:
  
+ -------------------------------------------------------------------------------------
    const makeApiCall = async (requestBody) => {
-      let endpoint = "http://localhost:3000/api/v1/signup" // your url
+      let endpoint = "http://localhost:3000/api/v1/signup";
       const options = {
         method: "POST",
         headers: {
@@ -36,14 +37,14 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
         if (!response.ok) {
             // Your logic goes here
         } 
-        const data = response.json();
+        const data = await response.json();
         return data;
       } catch {
         return error.message
       }  
   } 
  makeApiCall(yourRequestBodyObject)
- 
+----------------------------------------------------------------------------------------- 
  
   Hope this helps! 😉
 
