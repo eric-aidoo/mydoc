@@ -20,7 +20,8 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
  # If you don't know how to make an API request, see example below:
  
  -------------------------------------------------------------------------------------
-   const makeApiCall = async (requestBody) => {
+  
+  function makeApiCall(requestBody) {
       let endpoint = "http://localhost:3000/api/v1/signup";
       const options = {
         method: "POST",
@@ -30,6 +31,7 @@ your use case. The codes are oversimplified, so it's easy to understand just by 
         },
         body: JSON.stringify(requestBody)  
       };
+      
       try {
         const response = await fetch(endpoint, options);
         
