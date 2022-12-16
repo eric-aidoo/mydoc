@@ -6,9 +6,9 @@ This can be modified to fit many different use cases.
 Execute the following checklist to get started:
 1. Clone this repo by running " git clone https://github.com/eric-aidoo/mydoc " in your Visual Studio Code (IDE) terminal
 2. After cloning, run the following commands in your terminal:
-  a. npm install --save express bcrypt dotenv
-  b. npm install --save-dev @babel/cli @babel/core @babel/node @babel/preset-env nodemon
-  c. Then " npm run dev " to start the server
+  - npm install --save express bcrypt dotenv
+  - npm install --save-dev @babel/cli @babel/core @babel/node @babel/preset-env nodemon
+  - Then " npm run dev " to start the server
   
 # HEADS UP 
 Make sure you have node installed in your machine. Othwerwise the above codes won't work.
