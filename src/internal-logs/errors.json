@@ -1,0 +1,9 @@
+[
+    {
+        "errorCode": 500,
+        "errorMessage": "isValidPhoneNumber is not defined",
+        "time": "12/16/2022, 5:41:36 AM EST",
+        "statusCode": 200,
+        "errorType": "UnknownError"
+    }
+]

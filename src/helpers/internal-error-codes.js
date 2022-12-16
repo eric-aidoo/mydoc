@@ -1,0 +1,3 @@
+exports.VALIDATION_ERROR = 100;
+exports.HASHING_ERROR = 101,
+exports.REQUIRED_DATA = 320
